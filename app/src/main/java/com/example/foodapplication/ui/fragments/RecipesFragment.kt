@@ -1,13 +1,13 @@
-package com.example.foodapplication
+package com.example.foodapplication.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.foodapplication.R
 
-
-class FavoriteRecipesFragment : Fragment() {
+class RecipesFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -15,7 +15,7 @@ class FavoriteRecipesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_favorite_recipes, container, false)
+        return inflater.inflate(R.layout.fragment_recipes, container, false)
     }
 
 

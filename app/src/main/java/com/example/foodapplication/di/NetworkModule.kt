@@ -1,6 +1,6 @@
 package com.example.foodapplication.di
 
-import com.example.foodapplication.Constants.Companion.BASE_URL
+import com.example.foodapplication.util.Constants.Companion.BASE_URL
 import com.example.foodapplication.data.network.FoodRecipesApi
 import dagger.Module
 import dagger.Provides

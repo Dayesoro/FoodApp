@@ -23,6 +23,8 @@ class MainViewModel @Inject constructor(
 
     ) : AndroidViewModel(application) {
 
+
+
     var recipesResponse: MutableLiveData<NetworkResult<FoodRecipe>> = MutableLiveData()
 
     fun getRecipes(queries: Map<String, String>) = viewModelScope.launch {

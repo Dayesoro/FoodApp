@@ -5,23 +5,21 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.databinding.BindingAdapter
+import coil.load
 import com.example.foodapplication.R
 
 class RecipesRowBinding {
 
     companion object {
 
-        @BindingAdapter("setNumberOfLikes")
+        @BindingAdapter("loadImageFromUrl")
         @JvmStatic
-        fun setNumberOfLikes(textView: TextView, likes: Int) {
-            textView.text = likes.toString()
+        fun loadImageUrl(imageView: ImageView, imageUrl: String) {
+            imageView.load(imageUrl){
+                crossfade(600)
+            }
         }
 
-        @BindingAdapter("setNumberOfMinutes")
-        @JvmStatic
-        fun setNumberOfMinutes(textView: TextView, minutes: Int) {
-            textView.text = minutes.toString()
-        }
 
 
         @BindingAdapter("applyVeganColor")
@@ -48,6 +46,7 @@ class RecipesRowBinding {
                 }
             }
         }
+
     }
 
 

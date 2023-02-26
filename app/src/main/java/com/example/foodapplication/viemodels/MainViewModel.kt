@@ -1,4 +1,4 @@
-package com.example.foodapplication
+package com.example.foodapplication.viemodels
 
 import android.app.Application
 import android.content.Context
@@ -13,7 +13,6 @@ import com.example.foodapplication.util.NetworkResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import retrofit2.Response
-import java.time.temporal.TemporalQueries
 import javax.inject.Inject
 
 @HiltViewModel

@@ -1,4 +1,4 @@
-package com.example.foodapplication
+package com.example.foodapplication.data.database
 
 import androidx.room.TypeConverter
 import com.example.foodapplication.models.FoodRecipe
